@@ -1,0 +1,10 @@
+version: "3"
+services:
+  app:
+    container_name: update-server
+    restart: always
+    build: .
+    ports:
+      - "${PORT}:3000"
+    volumes:
+      - "/mnt/builds:/mnt/builds"

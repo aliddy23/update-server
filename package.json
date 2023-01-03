@@ -1,0 +1,21 @@
+{
+  "name": "pp-update",
+  "version": "1.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node .",
+    "dev": "nodemon .",
+    "restart": "sudo docker-compose build app && sudo docker-compose up -d app",
+    "deploy": "sudo docker-compose build app && sudo docker-compose up -d app"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1"
+  },
+  "type": "module"
+}
